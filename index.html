@@ -516,7 +516,6 @@
   <div id="pageLoader" class="page-loader" role="status" aria-live="polite" aria-busy="true" aria-label="Loading portfolio">
     <p class="loader-label">Loading</p>
     <div id="loaderPct" class="loader-pct">00%</div>
-    <p class="loader-mark">Codex Astra</p>
   </div>
 
   <canvas id="netCanvas" class="pointer-events-none fixed inset-0 z-[4] opacity-[0.28] dark:opacity-[0.35]" aria-hidden="true"></canvas>
@@ -615,7 +614,6 @@
     var CONTENT = {
       cover:
         '<header class="flex min-h-[50vh] flex-col justify-center">' +
-        // '<p class="font-mono text-[0.6rem] uppercase tracking-[0.5em] text-rose-500/90 dark:text-magenta-400/90">Codex Astra · Vol. 01</p>' +
         '<h1 class="mt-8 font-display text-5xl font-medium italic leading-[0.95] tracking-tight text-inklight dark:text-vellum md:text-7xl lg:text-8xl">Devyani<br/><span class="font-display font-medium italic bg-gradient-to-r from-cyan-600 via-stone-700 to-rose-500 bg-clip-text text-transparent dark:from-cyan-300 dark:via-vellum dark:to-magenta-400">Arya</span></h1>' +
         '<p class="mt-8 max-w-xl text-lg font-light leading-relaxed text-stone-600 dark:text-vellum/75 md:text-xl">Software Engineer &amp; AI Product innovator — clinical intelligence, humane systems.</p>' +
         '<div class="mt-12 flex flex-wrap gap-3">' +
@@ -762,7 +760,6 @@
       colophon:
         '<section class="flex min-h-[40vh] flex-col justify-end">' +
         '<p class="font-mono text-[0.6rem] uppercase tracking-[0.35em] text-stone-500 dark:text-vellum/45">Colophon</p>' +
-        '<p class="mt-6 font-display text-3xl italic text-inklight dark:text-vellum/90">Codex Astra</p>' +
         '<p class="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.45em] text-cyan-700 dark:text-cyan-500/50">Printed in the Neural Cloud</p>' +
         '<p class="mt-6 text-sm text-stone-600 dark:text-vellum/55">Bengaluru · India</p>' +
         '<p class="mt-8 font-mono text-[0.55rem] text-stone-400 dark:text-vellum/30">© 2026 Devyani Arya</p>' +
@@ -1041,7 +1038,7 @@
     function updateUi() {
       ribbon.style.height = ((idx + 1) / PAGES.length) * 100 + '%';
       pgLabel.textContent = PAGES[idx].label;
-      document.title = PAGES[idx].label + ' — Codex Astra';
+      document.title = PAGES[idx].label;
     }
 
     var SYM = ['λ', '∇', '∫', '⟨', '⟩', '∂', 'Σ', '{}', '01'];
